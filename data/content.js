@@ -47,7 +47,13 @@ const siteContent = {
       //   ]
       cases: [
         {
-          title: "绘梦校园赛季盲盒配音",
+          title: "AI配音效率对比",
+          description: "以T2单角色双语为例（约日英各15句），对比4种配音方案的效率。Minimax单平台批量生成占比达70%，整体效率最优；先dubbing再minimax方案在需求情绪统一的情况下效果会很高。",
+          image: "assets/images/AI配音/AI配音.png",
+          video: ""
+        },
+        {
+          title: "绘梦校园赛季盲盒配音试听",
           description: "英语配音采用AI原生效果，音色自然、情感表达到位，一致性更好，无需反复调音即可直接使用。",
           image: "",
           video: "",
