@@ -38,13 +38,24 @@ const siteContent = {
         "生成速度快，秒级出结果",
         "成本低，无需专业录音棚"
       ],
-      // 添加案例：每个案例包含标题、描述、图片（可选）、视频（可选）
+      // 添加案例：每个案例包含标题、描述、图片（可选）、视频（可选）、音频（可选）
+      // audio 支持两种写法:
+      //   单个音频: audio: "assets/images/AI配音/demo.mp3"
+      //   多个音频: audio: [
+      //     { label: "音色A", src: "assets/images/AI配音/voice-a.mp3" },
+      //     { label: "音色B", src: "assets/images/AI配音/voice-b.mp3" },
+      //   ]
       cases: [
         {
-          title: "案例：产品介绍视频配音",
-          description: "在这里填写你的案例说明文字...",
-          image: "", // 例如: "assets/images/dubbing-case1.png"
-          video: ""  // 例如: "assets/videos/dubbing-demo.mp4"
+          title: "绘梦校园赛季盲盒配音",
+          description: "英语配音采用AI原生效果，音色自然、情感表达到位，一致性更好，无需反复调音即可直接使用。",
+          image: "",
+          video: "",
+          audio: [
+            { label: "绘心画灵 - 音频1", src: "assets/images/AI配音/绘心画灵1.wav" },
+            { label: "绘心画灵 - 音频2", src: "assets/images/AI配音/绘心画灵2.wav" },
+            { label: "蛋小黑", src: "assets/images/AI配音/蛋小黑1.wav" }
+          ]
         }
       ]
     },

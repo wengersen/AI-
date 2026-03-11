@@ -146,7 +146,7 @@ function renderCaseCard(c) {
   return `
     <div class="case-card fade-in">
       <div class="case-media">
-        ${renderMedia(c.image, c.video, '添加案例图片/视频')}
+        ${renderMedia(c.image, c.video, '添加案例图片/视频', c.audio)}
       </div>
       <div class="case-body">
         <h4>${c.title}</h4>
@@ -156,14 +156,30 @@ function renderCaseCard(c) {
   `;
 }
 
-function renderMedia(image, video, placeholder) {
+function renderMedia(image, video, placeholder, audio) {
+  let html = '';
   if (video) {
-    return `<video controls preload="metadata" src="${video}"></video>`;
+    html += `<video controls preload="metadata" src="${video}"></video>`;
   }
   if (image) {
-    return `<img src="${image}" alt="" class="lightbox-img" style="cursor:zoom-in;">`;
+    html += `<img src="${image}" alt="" class="lightbox-img" style="cursor:zoom-in;">`;
   }
-  return `<span class="placeholder-text">📎 ${placeholder}</span>`;
+  if (audio) {
+    if (Array.isArray(audio)) {
+      html += `<div class="audio-list">${audio.map(a => `
+        <div class="audio-item">
+          <span class="audio-label">${a.label || '音频'}</span>
+          <audio controls preload="metadata" src="${a.src}"></audio>
+        </div>
+      `).join('')}</div>`;
+    } else {
+      html += `<audio controls preload="metadata" src="${audio}" style="width:100%;margin-top:8px;"></audio>`;
+    }
+  }
+  if (!html) {
+    html = `<span class="placeholder-text">📎 ${placeholder}</span>`;
+  }
+  return html;
 }
 
 // ----- Section 2 -----
