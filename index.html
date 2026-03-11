@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 在工作中的实际应用</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== 导航栏 ========== -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-logo">
+        🤖 <span>AI 应用汇报</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#section1">应用实践</a></li>
+        <li><a href="#section2">知识管理</a></li>
+        <li><a href="#outlook">展望</a></li>
+        <li><a href="#summary">总结</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button class="theme-toggle" id="theme-toggle" title="切换主题">☀️</button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== Hero 区域 ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="subtitle" id="hero-subtitle">提效赋能 · 智慧协作</p>
+      <h1 id="hero-title">AI 在工作中的实际应用</h1>
+      <p class="description" id="hero-description">探索AI如何融入日常工作流程，从内容创作到知识管理，全面提升工作效率</p>
+      <a href="#section1" class="hero-cta">开始探索 ↓</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>向下滚动</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+  <!-- ========== 第一部分：AI实际工作应用实践 ========== -->
+  <section class="section" id="section1">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="s1-title">AI 实际工作应用实践</h2>
+        <p id="s1-subtitle">四大核心应用方向</p>
+      </div>
+
+      <!-- Tab导航 -->
+      <div class="tabs-container">
+        <div class="tabs-nav" id="tabs-nav">
+          <!-- JS动态渲染 -->
+        </div>
+        <div id="tabs-content">
+          <!-- JS动态渲染 -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 第二部分：AI加速信息收集与知识沉淀 ========== -->
+  <section class="section" id="section2">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="s2-title">AI 加速信息收集与知识沉淀</h2>
+        <p id="s2-subtitle">构建个人知识管理体系</p>
+      </div>
+
+      <!-- NotebookLM & Obsidian -->
+      <div class="knowledge-grid">
+        <div class="knowledge-card fade-in-left" id="notebooklm-card">
+          <!-- JS动态渲染 -->
+        </div>
+        <div class="knowledge-card fade-in-right" id="obsidian-card">
+          <!-- JS动态渲染 -->
+        </div>
+      </div>
+
+      <!-- 协作工作流 -->
+      <div class="workflow-section fade-in" id="workflow-section">
+        <!-- JS动态渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 展望 ========== -->
+  <section class="section" id="outlook">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="outlook-title">未来展望</h2>
+        <p id="outlook-subtitle">AI赋能海外发行的四大方向</p>
+      </div>
+      <div class="outlook-grid" id="outlook-grid">
+        <!-- JS动态渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 总结 ========== -->
+  <section class="section summary-section" id="summary">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="summary-title">总结</h2>
+      </div>
+      <div class="summary-points" id="summary-points">
+        <!-- JS动态渲染 -->
+      </div>
+      <div class="closing-message fade-in" id="closing-message">
+        感谢大家的时间！欢迎交流讨论 🙌
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>AI 工作应用汇报 · 内部分享</p>
+    </div>
+  </footer>
+
+  <!-- ========== 图片灯箱 ========== -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">✕</button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+
+  <!-- ========== 回到顶部 ========== -->
+  <button class="back-to-top" id="back-to-top" title="回到顶部">↑</button>
+
+  <!-- 先加载内容配置，再加载交互逻辑 -->
+  <script src="data/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
